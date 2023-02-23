@@ -10,6 +10,7 @@ jobs:
         with:
            repository: psaboia/dvc-cml-start
            token: ${{ secrets.MY_TOKEN }}     
+           path: ./
       - name: cml_run
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}        

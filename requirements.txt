@@ -3,4 +3,4 @@ scikit-learn
 scipy
 matplotlib
 seaborn
-numpys
+numpy

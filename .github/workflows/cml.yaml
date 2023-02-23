@@ -12,7 +12,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Your ML workflow goes here
-          pip3 install -r requirements.txt
-          python3 train.py
+          pip install -r requirements.txt
+          python train.py
           echo "MODEL METRICS"
           cat metrics.txt

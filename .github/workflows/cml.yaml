@@ -7,13 +7,10 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
-        with:
-           repository: psaboia/dvc-cml-start
-           token: ${{ secrets.MY_TOKEN }}     
-           path: ./
       - name: cml_run
         env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}        
+          repo_token: ${{ secrets.GITHUB_TOKEN }}          
+          token: ${{ secrets.MY_TOKEN }}
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt

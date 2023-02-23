@@ -10,6 +10,7 @@ jobs:
       - name: cml_run
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+          #token: ${{ secrets.MY_TOKEN }}
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
@@ -23,4 +24,4 @@ jobs:
           cml-publish residuals.png --md >> report.md
           
           # cml-send-comment report.md          
-          cml-send-comment --pr --update --publish report.md
+          cml-send-comment --token ${{ secrets.MY_TOKEN }} report.md

@@ -1,0 +1,18 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "psaboia", email = "psaboiawork@gmail.com"},
+]
+dependencies = [
+    "pandas>=1.5.3",
+    "seaborn>=0.12.2",
+    "sklearn>=0.0.post1",
+    "matplotlib>=3.7.0",
+    "numpy>=1.24.2",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
